@@ -10,12 +10,13 @@ class QuestionController extends AbstractController
 {
     public function homepage()
     {
-        return new Response('Coucou bb jtm!!!!!!!');
+        return $this->render('question/homepage.html.twig');
     }
 
     /**
-     * @Route ("/questions/{slug}")
+     * @Route ("/question/{slug}")
      */
+
     public function show ($slug)
     {
 
@@ -24,6 +25,8 @@ class QuestionController extends AbstractController
             'Ta mere est morte',
             'Ok. Je vais allez baizer ta mere',
         ];
+
+        dump($slug, $this);
 
 
         return $this->render('question/show.html.twig', [
