@@ -7,22 +7,144 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style1.css') }}">
     {% endblock %}
 </head>
 <body>
-<nav class="navbar navbar-light bg-dark" style="height: 100px;">
-    <a class="navbar-brand" href="#">
-        <i style="color: white; font-size: 2rem;" class="pb-1 fad fa-cauldron"></i>
-        <p class="pl-2 d-inline font-weight-bold" style="color: white;">Cauldron Overflow</p>
-    </a>
-    <button class="btn btn-light">Sign up</button>
+<nav class="jumbotron-img navbar nav-link navbar-expand-lg ftco_navbar ftco-new-engage" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="{{ path('app_base') }}">Digital</a>
+        <div class="social-media order-lg-last">
+            <p class="mb-0 d-flex">
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+            </p>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto mr-md-3">
+                <li class="nav-item active"><a href="#" class="navbar-brand1">Home</a></li>
+                <li class="nav-item"><a href="#" class="navbar-brand1">About</a></li>
+                <li class="nav-item"><a href="#" class="navbar-brand1">Work</a></li>
+                <li class="nav-item"><a href="#" class="navbar-brand1">Blog</a></li>
+                <li class="nav-item"><a href="#" class="navbar-brand1">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 {% block body %}{% endblock %}
-<footer class="bg-dark mt-5 p-3 text-white text-center">
-    Made with <i style="color: red;" class="fa fa-heart"></i> by the guys and gals at <a style="color: white; text-decoration: underline;" href="https://symfonycasts.com">SymfonyCasts</a>
+<footer class="footer-09">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading d-flex">
+                    <span class="icon d-flex align-items-center justify-content-center"><i class="far fa-address-card"></i></span>
+                    About Us
+                </h2>
+                <div class="block-23 mb-3">
+                    <ul>
+                        <li><span class="fas fa-map-marker-alt"></span><span class="text" style="padding-left: 20px;">53 Cr Albert Thomas, 69003 Lyon</span></li>
+                        <li><a href="tel:0630729873"><span class="fas fa-phone-alt"></span><span class="text" style="padding-left: 20px;" >+33 6 30 72 98 73</span></a></li>
+                        <li><a href="#"><span class="fas fa-phone-alt"></span><span class="text" style="padding-left: 20px;" >+33 6 Jeremy</span></a></li>
+                        <li><a href="mailto:BJTechnoDev@gmail.com"><span class="far fa-envelope"></span><span class="text" style="padding-left: 20px;">BJTechnoDev@gmail.com</span></a></li>
+                    </ul>
+                </div>
+                <form action="#" class="subscribe-form">
+                    <div class="form-group d-flex">
+                        <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+                        <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i class="far fa-envelope"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-newspaper"></i></span>Latest News</h2>
+                <div class="block-21 mb-4 d-flex">
+                    <a class="img mr-4 rounded" style="background-image: url(images/Test4.jpg);"></a>
+                    <div class="text">
+                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                        <div class="meta">
+                            <div><a href="#"><span class="icon-calendar"></span> Oct. 16, 2019</a></div>
+                            <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                            <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-21 mb-4 d-flex">
+                    <a class="img mr-4 rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
+                    <div class="text">
+                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                        <div class="meta">
+                            <div><a href="#"><span class="icon-calendar"></span> Oct. 16, 2019</a></div>
+                            <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                            <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-question-circle"></i></span>Information</h2>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text py-1 d-block">About</a></li>
+                    <li><a href="#" class="py-1 d-block">Products</a></li>
+                    <li><a href="#" class="py-1 d-block">Blog</a></li>
+                    <li><a href="#" class="py-1 d-block">Contact</a></li>
+                    <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-share-alt-square"></i></i></span>Instagram</h2>
+                <div class="block-24">
+                    <div class="row no-gutters">
+                        <div class="col-4 col-md-4 p-1">
+                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
+                        </div>
+                        <div class="col-4 col-md-4 p-1">
+                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
+                        </div>
+                        <div class="col-4 col-md-4 p-1">
+                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
+                        </div>
+                        <div class="col-4 col-md-4 p-1">
+                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
+                        </div>
+                        <div class="col-4 col-md-4 p-1">
+                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
+                        </div>
+                        <div class="col-4 col-md-4 p-1">
+                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 pt-4 border-top">
+            <div class="col-md-6 col-lg-8">
+                <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
+            </div>
+            <div class="col-md-6 col-lg-4 text-md-right">
+                <p class="copyright">Projet réalisé par</réa> <i class="ion-ios-heart" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank">BJ TechnoDev</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+        </div>
+    </div>
 </footer>
-{% block javascripts %}{% endblock %}
+{% block javascripts %}
+    <script src="js/main.js"></script>
+    <script src="js/footer.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+{% endblock %}
 </body>
 </html>
