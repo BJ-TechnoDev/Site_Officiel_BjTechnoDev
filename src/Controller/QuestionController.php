@@ -23,7 +23,7 @@ class QuestionController extends AbstractController
 //        $html = $twigEnvironment->render('question/homepage.html.twig');
 //
 //        return new Response($html);
-        return $this->render('question/homepage.html.twig');
+        return $this->render('front/contact.html.twig');
     }
 
     /**
