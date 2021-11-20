@@ -1,6 +1,8 @@
 // **
 // * Simple (ugly) code to handle the comment vote up/down
 // */
+
+import $ from 'jquery'
 var $container = $('.js-vote-arrows');
 $container.find('a').on('click', function(e) {
     e.preventDefault();
