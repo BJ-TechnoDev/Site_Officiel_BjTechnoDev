@@ -1,10 +1,13 @@
 @import "style.css";
 @import "style1.css";
+@import "~bootstrap";
+@import '~@fortawesome/fontawesome-free/css/all.min.css ';
 
 body {
     font-family: spartan;
     color: #444;
 }
+
 
 .jumbotron-img {
     background: rgb(237,116,88);
@@ -136,12 +139,12 @@ footer {
 }
 
 body {
-    background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
+    /*background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);*/
     font-size: 12px;
 }
 
-body, button, input {
-    font-family: 'Montserrat', sans-serif;
+body, button, input, a {
+    font-family: "Lato", sans-serif;
     font-weight: 700;
     letter-spacing: 1.4px;
 }
@@ -194,12 +197,14 @@ body, button, input {
     width: 8px;
     height: 8px;
     margin-right: 3px;
-    border-radius: 8px;
+    border-radius: 10px;
     background: white;
 }
 
 .screen-header-button.close {
-    background: #ed1c6f;
+    background: red;
+    margin-left: 5px;
+    margin-top: 6px;
 }
 
 .screen-header-button.maximize {
@@ -297,7 +302,7 @@ body, button, input {
 
 .app-form-button {
     background: none;
-    border: none;
+    margin-top: 20px;
     color: #ea1d6f;
     font-size: 14px;
     cursor: pointer;
@@ -305,7 +310,15 @@ body, button, input {
 }
 
 .app-form-button:hover {
-    color: #b9134f;
+    color: #ea1d6f;
+}
+
+.couleur {
+    border: none;
+    color: mediumpurple;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
 }
 
 .credits {
@@ -368,7 +381,7 @@ body, button, input {
 body {
     margin: 0;
     padding: 0;
-    background-color: #000;
+    /*background-color: #000;*/
 }
 
 #contact {
@@ -406,8 +419,9 @@ body {
 
 .form-control,
 textarea {
-    max-width: 400px;
-    background-color: #000;
+    max-width: 700px;
+    font-weight: 700;
+    background-color: #3e3e3e;
     color: #fff;
     letter-spacing: 1px;
 }
@@ -513,7 +527,6 @@ textarea {
 }
 
 .social-media-list li:after {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -542,7 +555,7 @@ textarea {
 
 .copyright {
     font: 200 14px 'Oswald', sans-serif;
-    color: #555;
+    color: gold;
     letter-spacing: 1px;
     text-align: center;
 }

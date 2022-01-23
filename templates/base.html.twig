@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block title %}Portfolio{% endblock %}</title>
     {% block stylesheets %}
+        <link rel="shortcut icon" href="{{ asset('build/favicon.ico') }}" type="image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
 </head>
 <body>
-<nav class="jumbotron-img navbar nav-link navbar-expand-lg ftco_navbar ftco-new-engage" id="ftco-navbar">
+<nav class="fixed-top jumbotron-img navbar nav-link navbar-expand-lg ftco_navbar ftco-new-engage" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{ path('app_base') }}">Digital</a>
+        <a class="d-flex" href="{{ path('app_base') }}"><a class="navbar-brand" href="{{ path('app_base') }}">PORTFOLIO</a></a>
         <div class="social-media order-lg-last">
             <p class="mb-0 d-flex">
-                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                <a href="https://github.com/Sairkko" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fab fa-github"><i class="sr-only"></i></span></a>
+                <a href="https://twitter.com/home" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fab fa-twitter"><i class="sr-only"></i></span></a>
+                <a href="https://www.linkedin.com/in/bastien-oeuvrard-24480069/" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fab fa-linkedin-in"><i class="sr-only"></i></span></a>
             </p>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,42 +29,40 @@
             <ul class="navbar-nav ml-auto mr-md-3">
                 <li class="nav-item active"><a href="#" class="navbar-brand1">Home</a></li>
                 <li class="nav-item"><a href="#" class="navbar-brand1">About</a></li>
-                <li class="nav-item"><a href="#" class="navbar-brand1">Work</a></li>
-                <li class="nav-item"><a href="#" class="navbar-brand1">Blog</a></li>
-                <li class="nav-item"><a href="#" class="navbar-brand1">Contact</a></li>
+                <li class="nav-item"><a href="#" class="navbar-brand1">Project</a></li>
+                <li class="nav-item"><a href="#" class="navbar-brand1">Education</a></li>
+                <li class="nav-item"><a href="{{ path('contact')}}" class="navbar-brand1">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 {% block body %}{% endblock %}
-<footer class="footer-09" style="padding-bottom: 0px; padding-top: 50px;">
+<footer class="footer-09 jumbotron-img" style="padding-bottom: 0px; padding-top: 50px;">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
                 <h2 class="footer-heading d-flex">
                     <span class="icon d-flex align-items-center justify-content-center"><i class="far fa-address-card"></i></span>
-                    About Us
+                    About Me
                 </h2>
                 <div class="block-23 mb-3">
                     <ul>
-                        <li><span class="fas fa-map-marker-alt"></span><span class="text" style="padding-left: 20px;">53 Cr Albert Thomas, 69003 Lyon</span></li>
+                        <li><span class="fas fa-map-marker-alt"></span><span class="text" style="padding-left: 20px;"><a href="https://www.google.com/maps/place/38790+Saint-Georges-d'Esp%C3%A9ranche/@45.5628023,5.0539773,13z/data=!3m1!4b1!4m5!3m4!1s0x47f4d6acadf37b5f:0x408ab2ae4be6c00!8m2!3d45.555929!4d5.078498" target="_blank"> Saint-Georges-d'Espéranche</a></span></li>
                         <li><a href="tel:0630729873"><span class="fas fa-phone-alt"></span><span class="text" style="padding-left: 20px;" >+33 6 30 72 98 73</span></a></li>
-                        <li><a href="#"><span class="fas fa-phone-alt"></span><span class="text" style="padding-left: 20px;" >+33 6 Jeremy</span></a></li>
-                        <li><a href="mailto:BJTechnoDev@gmail.com"><span class="far fa-envelope"></span><span class="text" style="padding-left: 20px;">BJTechnoDev@gmail.com</span></a></li>
+                        <li><a href="mailto:bastien.98@orange.fr"><span class="far fa-envelope"></span><span class="text" style="padding-left: 20px;">bastien.98@orange.fr</span></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-                <h2 class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-newspaper"></i></span>Latest News</h2>
+                <h2 class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-newspaper"></i></span>Latest Project</h2>
                 <div class="block-21 mb-4 d-flex">
-                    <a class="img mr-4 rounded" style="background-image: url(images/Test4.jpg);"></a>
+                    <a href="" class="img mr-4 rounded" style="background-image: url({{ asset('build/Fraied.png') }});"></a>
                     <div class="text">
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                        <h3 class="heading"><a href="" target="_blank">Application Web de Frais</a></h3>
                         <div class="meta">
-                            <div><a href="#"><span class="icon-calendar"></span> Oct. 16, 2019</a></div>
-                            <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                            <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                            <div><a href="" target="_blank"><span class="icon-calendar"></span> 6 months ago</a></div>
+                            <div><a href="" target="_blank"><span class="icon-person"></span>  June 22, 2021</a></div>
                         </div>
                     </div>
                 </div>
@@ -72,46 +70,32 @@
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
                 <h2 class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-question-circle"></i></span>Information</h2>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text py-1 d-block">About</a></li>
-                    <li><a href="#" class="py-1 d-block">Products</a></li>
-                    <li><a href="#" class="py-1 d-block">Blog</a></li>
-                    <li><a href="#" class="py-1 d-block">Contact</a></li>
-                    <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
+                    <li><a href="#" class="salut py-1 d-block">About</a></li>
+                    <li><a href="#" class="py-1 d-block">Education</a></li>
+                    <li><a href="#" class="py-1 d-block">Project</a></li>
+                    <li><a href="{{ path('contact')}}" class="py-1 d-block">Contact</a></li>
                 </ul>
             </div>
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-                <h2 class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-share-alt-square"></i></i></span>Instagram</h2>
+                <h2 style="font-size: 20px" class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-share-alt-square"></i></span>My Social Networks</h2>
                 <div class="block-24">
-                    <div class="row no-gutters">
-                        <div class="col-4 col-md-4 p-1">
-                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
-                        </div>
-                        <div class="col-4 col-md-4 p-1">
-                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
-                        </div>
-                        <div class="col-4 col-md-4 p-1">
-                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
-                        </div>
-                        <div class="col-4 col-md-4 p-1">
-                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
-                        </div>
-                        <div class="col-4 col-md-4 p-1">
-                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
-                        </div>
-                        <div class="col-4 col-md-4 p-1">
-                            <a href="#" class="img rounded" style="background-image: url(images/81JAJdnR4UL._SS500_.jpg);"></a>
-                        </div>
+                    <div class="social-media order-lg-last">
+                        <p class="mb-0 d-flex">
+                            <a href="https://github.com/Sairkko" target="_blank" style="font-size: 20px; margin-left: 60px" class="d-flex align-items-center justify-content-center"><span class="fab fa-github"><i class="sr-only"></i></span></a>
+                            <a href="https://twitter.com/home" target="_blank" style="font-size: 20px; margin-left: 20px" class="d-flex align-items-center justify-content-center"><span class="fab fa-twitter"><i class="sr-only"></i></span></a>
+                            <a href="https://www.linkedin.com/in/bastien-oeuvrard-24480069/" target="_blank" style="font-size: 20px; margin-left: 20px" class="d-flex align-items-center justify-content-center"><span class="fab fa-linkedin-in"><i class="sr-only"></i></span></a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row mt-5 pt-4 border-top">
             <div class="col-md-6 col-lg-8">
-                <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <p class="copyright" style="float: left"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
             </div>
             <div class="col-md-6 col-lg-4 text-md-right">
-                <p style="color: #ea1d6f;" class="copyright">Projet réalisé par</réa> <i style="color:" class="ion-ios-heart" aria-hidden="true"></i>BJ TechnoDev
+                <p style="float: right" class="copyright">Projet réalisé par</réa> <i style="color:" class="ion-ios-heart" aria-hidden="true"></i>Bastien
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>
@@ -119,6 +103,10 @@
 </footer>
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
 {% endblock %}
 </body>
 </html>

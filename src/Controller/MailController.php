@@ -33,8 +33,9 @@ class MailController extends AbstractController
 
         dump($requestStack);
 
-        return $this->render('base.html.twig');
-
-    }
+        return $this->render('front/index.html.twig');
 
 }
+
+}
+
