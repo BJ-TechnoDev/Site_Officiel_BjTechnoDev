@@ -9,6 +9,21 @@ body {
 }
 
 
+/*slider*/
+
+.swiper-wrapper .swiper-slide p{
+    text-align: center;
+    padding: 10px;
+    background: white;
+    width: 500px;
+    margin: 250px auto 0 auto;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 2px 12px black;
+}
+
+/*fin slider*/
+
 .jumbotron-img {
     background: rgb(237,116,88);
     background: linear-gradient(302deg, rgba(237,116,88,1) 16%, rgba(51,61,81,1) 97%);

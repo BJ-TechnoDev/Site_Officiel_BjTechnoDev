@@ -10,6 +10,9 @@ import '../styles/app.css';
 import '../js/main'
 import '../js/question_show';
 import '../js/scroll';
+import '../js/init';
+
+
 
 // start the Stimulus application
 import '../bootstrap';
