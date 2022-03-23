@@ -11,12 +11,25 @@ body {
 
 /*slider*/
 
-.swiper-wrapper .swiper-slide p{
+.swiper-wrapper p{
     text-align: center;
     padding: 10px;
     background: white;
-    width: 500px;
     margin: 250px auto 0 auto;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 2px 12px black;
+    position: relative;
+}
+
+.Middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    background: white;
     font-size: 20px;
     border-radius: 15px;
     box-shadow: 3px 2px 12px black;

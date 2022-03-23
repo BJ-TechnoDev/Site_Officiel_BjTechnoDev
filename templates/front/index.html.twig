@@ -2,25 +2,28 @@
 
 {% block body %}
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" style="margin-top: 15px; margin-bottom: 15px;">
 
 {#todo voir pour les style dans la div class swiper-slide si on peut pas améliorer pour enlever l'erreur et voir ou on
             peut ajouter un h1 BJTechnoDev#}
 
-            <div class="swiper-slide" style="background:url(../build/code.jpg);height: 600px;">
-                <p>Dans ce site vous pourrez apprendre a nous connaitre ...</p>
+            <div class="swiper-slide ">
+                <img class="swiper-slide" style="height: 500px; width: 80%; display: block;margin: auto" src="{{ asset('build/code.jpg') }}" alt="">
+                <div class="Middle">Dans ce site vous pourrez apprendre a nous connaitre ...</div>
             </div>
 
-            <div class="swiper-slide" style="background:url(../build/service.jpg);height: 600px;">
-                <p><span style="text-transform:uppercase;">é</span>galement voir les services que nous proposons ....</p>
+            <div class="swiper-slide ">
+                <img class="swiper-slide" style="height: 500px; width: 80%; display: block;margin: auto" src="{{ asset('build/service.jpg') }}" alt="">
+                <div class="Middle"><span style="text-transform:uppercase;">é</span>galement voir les services que nous proposons ....</div>
             </div>
 
-            <div class="swiper-slide" style="background:url(../build/projet.jpg);height: 600px;">
-                <p>Mais aussi touts nos projets récents .</p>
+            <div class="swiper-slide ">
+                <img class="swiper-slide" style="height: 500px; width: 80%; display: block;margin: auto" src="{{ asset('build/projet.jpg') }}" alt="">
+                <div class="Middle">Mais aussi touts nos projets récents .</div>
             </div>
 
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next" style="margin-right: 50px; color: black"></div>
+        <div class="swiper-button-prev" style="margin-left: 50px; color: black"></div>
     </div>
 {% endblock %}
