@@ -8196,13 +8196,14 @@ footer {
 .footer-09 .border-top {
     border-color: rgba(255, 255, 255, 0.1) !important; }
 .footer-09 a {
-    color: ghostwhite; }
+    color: #333; }
 .footer-09 a:hover {
     color: #fc7fb2; }
 .footer-09 p {
-    color: gold; }
+    color: #295333;
+}
 .footer-09 .footer-heading {
-    color: #fff;
+    color: #333;
     font-size: 22px;
     margin-bottom: 30px; }
 .footer-09 .footer-heading .icon {
@@ -8211,16 +8212,17 @@ footer {
     border-radius: 50%;
     height: 40px;
     display: block;
-    color: ghostwhite;
+    color: #333;
     border: 1px solid darkgrey; }
 /*.footer-09 ul.list-unstyled li a {*/
 /*    color: ghostwhite; }*/
 .footer-09 .block-21 .heading a {
-    color: rgba(255, 255, 255, 0.5); }
+    color: #333;
+}
 .footer-09 .block-21 .meta div a {
-    color: rgba(255, 255, 255, 0.3); }
+    color: #333; }
 .footer-09 .block-23 ul li {
-    color: rgba(255, 255, 255, 0.5); }
+    color: #333; }
 .footer-09 .subscribe-form .form-group {
     position: relative;
     margin-bottom: 0;

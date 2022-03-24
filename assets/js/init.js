@@ -1,3 +1,5 @@
+import AOS from "aos";
+
 var swiper = new Swiper(".mySwiper", {
     loop:true,
     navigation: {
@@ -5,3 +7,5 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+AOS.init();
