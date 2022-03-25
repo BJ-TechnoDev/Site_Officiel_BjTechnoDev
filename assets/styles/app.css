@@ -2,6 +2,7 @@
 @import "style1.css";
 @import "home.css";
 @import "~bootstrap";
+@import "~simple-line-icons";
 @import '~@fortawesome/fontawesome-free/css/all.min.css ';
 @import "~aos/dist/aos.css";
 
