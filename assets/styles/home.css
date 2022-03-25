@@ -41,3 +41,67 @@
     }
 }
 /*fin section about*/
+
+/*section service*/
+#services{
+    background: #5289D8 ;
+}
+
+.content-section {
+    padding-top: 2.5rem;
+    padding-bottom: 7.5rem;
+}
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+.service-icon {
+    background-color: #fff;
+    color: #1D809F;
+    height: 7rem;
+    width: 7rem;
+    display: block;
+    line-height: 7.5rem;
+    font-size: 2.25rem;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.text-faded {
+    color: #F9F190 !important;
+}
+.content-section-heading h3{
+    color: #F9F190 !important;
+}
+.content-section h4{
+    color: #333;
+}
+.content-section-heading h2{
+    color: #333;
+}
+
+@media screen and (max-width: 992px) {
+    .content-section-heading h3{
+        font-size: 80px;
+    }
+    .content-section-heading h2,
+    .content-section h4{
+        font-size: 50px;
+    }
+    .service-icon{
+        line-height: inherit;
+        height: 20rem;
+        width: 20rem;
+        font-size: 12.25rem;
+    }
+    .text-faded{
+        font-size: 40px;
+    }
+}
+
+/*fin section service*/
