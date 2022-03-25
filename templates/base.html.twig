@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}BjTechnoDev{% endblock %}</title>
     {% block stylesheets %}
-        <link rel="shortcut icon" href="{{ asset('build/favicon.ico') }}" type="image/x-icon">
+        <link rel="shortcut icon" href="{{ asset('build/favicon (2).ico') }}" type="image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan&display=swap">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -103,13 +104,14 @@
     </div>
 </footer>
 {% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous">
     </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+    {{ encore_entry_script_tags('app') }}
 {% endblock %}
 </body>
 </html>

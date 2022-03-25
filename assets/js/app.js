@@ -6,8 +6,10 @@ import '../js/main'
 import '../js/question_show';
 import '../js/scroll';
 import '../js/init';
+import '../js/activities';
 
 
 
 // start the Stimulus application
 import '../bootstrap';
+
