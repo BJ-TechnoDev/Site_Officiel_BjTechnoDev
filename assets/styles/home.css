@@ -114,6 +114,19 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .text-faded{
+        font-size: 20px;
+    }
+    .content-section-heading h2,
+    .content-section h4{
+        font-size: 30px;
+    }
+    #about h1{
+        font-size: 50px !important;
+    }
+}
+
 /*fin section service*/
 
 /* début activites */
@@ -261,9 +274,16 @@
     .ag-format-container {
         width: 96%;
     }
-    /*.ag-container-shops span {*/
-    /*    font-size: 30px;*/
-    /*}*/
+    .img-ronde{
+        height: 250px;
+    }
+    .copyright{
+        margin: 0 auto;
+        float: none !important;
+    }
+    .copyright:nth-child(1){
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 639px) {
