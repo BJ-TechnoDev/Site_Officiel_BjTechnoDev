@@ -19,7 +19,7 @@
         <a class="d-flex" href="{{ path('app_base') }}"><a class="navbar-brand" href="{{ path('app_base') }}">BJTechoDev</a></a>
         <div class="social-media order-lg-last">
             <p class="mb-0 d-flex">
-                <a href="https://github.com/Sairkko" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fab fa-github"><i class="sr-only"></i></span></a>
+                <a href="https://github.com/BJ-TechnoDev" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fab fa-github"><i class="sr-only"></i></span></a>
                 <a href="https://twitter.com/home" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fab fa-twitter"><i class="sr-only"></i></span></a>
                 <a href="https://www.linkedin.com/in/bastien-oeuvrard-24480069/" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fab fa-linkedin-in"><i class="sr-only"></i></span></a>
             </p>
@@ -29,10 +29,10 @@
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto mr-md-3">
-                <li class="nav-item active"><a href="#" class="navbar-brand1">Home</a></li>
-                <li class="nav-item"><a href="#" class="navbar-brand1">About Us</a></li>
-                <li class="nav-item"><a href="#" class="navbar-brand1">Our Projects</a></li>
-                <li class="nav-item"><a href="#" class="navbar-brand1">Our Activities</a></li>
+                <li class="nav-item active"><a href="{{ path('homepage') }}" class="navbar-brand1">Home</a></li>
+                <li class="nav-item"><a href="{{ path('homepage') }}#about" class="navbar-brand1">About Us</a></li>
+                <li class="nav-item"><a href="{{ path('homepage') }}#services" class="navbar-brand1">Nos Projets</a></li>
+                <li class="nav-item"><a href="{{ path('homepage') }}#projet" class="navbar-brand1">Nos Activités</a></li>
                 <li class="nav-item"><a href="{{ path('contact')}}" class="navbar-brand1">Contact Us</a></li>
             </ul>
         </div>
@@ -41,7 +41,7 @@
 
 {% block body %}{% endblock %}
 
-<footer class="footer-09 jumbotron-img" style="padding-bottom: 0px; padding-top: 50px;">
+<footer class="footer-09 jumbotron-img" style="padding-bottom: 0; padding-top: 50px;">
     <div class="container">
         <div class="row" style="width: 90%;margin: 0 auto;">
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4" style="padding-right: 0;">
@@ -49,10 +49,9 @@
                     <span class="icon d-flex align-items-center justify-content-center"><i class="far fa-address-card"></i></span>
                     About Us
                 </h2>
-                <div class="block-23 mb-3">
+                <div class="block-23 mb-3 footer-091">
                     <ul>
-                        <li><span class="fas fa-map-marker-alt"></span><span class="text" style="padding-left: 20px;"><a href="https://www.google.com/maps/place/38790+Saint-Georges-d'Esp%C3%A9ranche/@45.5628023,5.0539773,13z/data=!3m1!4b1!4m5!3m4!1s0x47f4d6acadf37b5f:0x408ab2ae4be6c00!8m2!3d45.555929!4d5.078498" target="_blank"> Saint-Georges-d'Espéranche</a></span></li>
-                        <li><a href="tel:0630729873"><span class="fas fa-phone-alt"></span><span class="text" style="padding-left: 20px;" >+33 6 30 72 98 73</span></a></li>
+                        <li><span class="fas fa-map-marker-alt"></span><span class="text" style="padding-left: 20px;"><a href="https://www.google.fr/maps/place/Lyon/@45.7579293,4.7650902,12z/data=!3m1!4b1!4m5!3m4!1s0x47f4ea516ae88797:0x408ab2ae4bb21f0!8m2!3d45.764043!4d4.835659" target="_blank"> Lyon, France</a></span></li>
                         <li><a href="mailto:bastien.98@orange.fr"><span class="far fa-envelope"></span><span class="text" style="padding-left: 20px;">bjtechnodev@gmail.com</span></a></li>
                     </ul>
                 </div>
@@ -60,22 +59,30 @@
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
                 <h2 class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-newspaper"></i></span>Latest Project</h2>
                 <div class="block-21 mb-4 d-flex">
-                    <a href="" class="img mr-4 rounded" style="background-image: url({{ asset('build/Fraied.png') }});"></a>
+                    <a href="https://bastiendev.com/" class="img mr-4 rounded" style="background-image: url({{ asset('build/bastien.jpg') }});"></a>
                     <div class="text">
-                        <h3 class="heading"><a href="" target="_blank">Application Web de Frais</a></h3>
+                        <h3 class="heading"><a href="https://bastiendev.com/" target="_blank">Portfolio Bastien</a></h3>
                         <div class="meta">
-                            <div><a href="" target="_blank"><span class="icon-calendar"></span> 6 months ago</a></div>
-                            <div><a href="" target="_blank"><span class="icon-person"></span>  June 22, 2021</a></div>
+                            <div><a href="https://bastiendev.com/" target="_blank"><span class="icon-person"></span>  February 22, 2022</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-21 mb-4 d-flex">
+                    <a href="https://jeremydev.fr/" target="_blank" class="img mr-4 rounded" style="background-image: url({{ asset('build/Jeremy.png') }});"></a>
+                    <div class="text">
+                        <h3 class="heading"><a href="https://jeremydev.fr/" target="_blank">Portfolio Jeremy</a></h3>
+                        <div class="meta">
+                            <div><a href="https://jeremydev.fr/" target="_blank"><span class="icon-person"></span>  February 22, 2022</a></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
                 <h2 class="footer-heading d-flex align-items-center"><span class="icon d-flex align-items-center justify-content-center"><i class="fas fa-question-circle"></i></span>Information</h2>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="salut py-1 d-block">About Us</a></li>
-                    <li><a href="#" class="py-1 d-block">Our Project</a></li>
-                    <li><a href="#" class="py-1 d-block">Our Activities</a></li>
+                <ul style="margin-left: 10px;" class="list-unstyled">
+                    <li><a href="{{ path('homepage') }}#about" class="py-1 d-block">About Us</a></li>
+                    <li><a href="{{ path('homepage') }}#services" class="py-1 d-block">Nos Projets</a></li>
+                    <li><a href="{{ path('homepage') }}#projet" class="py-1 d-block">Nos Activités</a></li>
                     <li><a href="{{ path('contact')}}" class="py-1 d-block">Contact Us</a></li>
                 </ul>
             </div>
@@ -84,7 +91,7 @@
                 <div class="block-24">
                     <div class="social-media order-lg-last">
                         <p class="mb-0 d-flex">
-                            <a href="https://github.com/Sairkko" target="_blank" style="font-size: 20px; margin-left: 60px" class="d-flex align-items-center justify-content-center"><span class="fab fa-github"><i class="sr-only"></i></span></a>
+                            <a href="https://github.com/BJ-TechnoDev" target="_blank" style="font-size: 20px; margin-left: 60px" class="d-flex align-items-center justify-content-center"><span class="fab fa-github"><i class="sr-only"></i></span></a>
                             <a href="https://twitter.com/home" target="_blank" style="font-size: 20px; margin-left: 20px" class="d-flex align-items-center justify-content-center"><span class="fab fa-twitter"><i class="sr-only"></i></span></a>
                             <a href="https://www.linkedin.com/in/bastien-oeuvrard-24480069/" target="_blank" style="font-size: 20px; margin-left: 20px" class="d-flex align-items-center justify-content-center"><span class="fab fa-linkedin-in"><i class="sr-only"></i></span></a>
                         </p>
@@ -94,11 +101,11 @@
         </div>
         <div class="row mt-5 pt-4 border-top" style="margin-right: 0;">
             <div class="col-md-6 col-lg-8">
-                <p class="copyright" style="float: left"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <p class="copyright" style="float: left; color: #5289d8"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
             </div>
             <div class="col-md-6 col-lg-4 text-md-right">
-                <p style="float: right" class="copyright">Projet réalisé par</réa> <i style="color:" class="ion-ios-heart" aria-hidden="true"></i>BJTechnoDev
+                <p style="float: right; color: #F9F190" class="copyright">Projet réalisé par <i class="ion-ios-heart" aria-hidden="true"></i>BJTechnoDev
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>

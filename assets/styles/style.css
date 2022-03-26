@@ -372,7 +372,7 @@ mark,
 }
 
 .list-unstyled:hover{
-    color: #fc7fb2;
+    color: #F9F190;
 }
 
 
@@ -4211,7 +4211,7 @@ a.badge-dark:focus, a.badge-dark.focus {
     box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .navbar-brand:hover {
-    color: #fc7fb2;
+    color: #5289D8;
 }
 
 .navbar-brand {
@@ -4220,8 +4220,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .navbar-brand1:hover{
-    color: #fc7fb2;
-    font-size: 15px;
+    color: #F9F190;
+    font-size: 20px;
 }
 
 
@@ -8314,8 +8314,8 @@ h1, h2, h3, h4, h5,
 .social-media p a span {
     color: #4d4d4d; }
 .social-media p a:hover {
-    background: #fc7fb2;
-    border-color: #fc7fb2; }
+    background: #F9F190;
+    border-color: #F9F190; }
 .social-media p a:hover span {
     color: #fff; }
 @media (max-width: 991.98px) {

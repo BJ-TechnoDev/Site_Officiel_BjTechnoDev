@@ -31,13 +31,13 @@
 
     <section id="about">
         <h1 class="text-center" style="color: #5289d8;margin-top: 20px;font-size: 70px;">BJ TechnoDev</h1>
-        <p class="text-center about-txt">
+        <p class="text-center about-txt" data-aos="fade-down" data-aos-duration="1500">
             Nous sommes deux <strong>developpeur full stack symfony</strong> <br>
             Nous sommes actuellement en deuxieme année dans le <strong>Bachelor ESGI</strong> <br>
             Notre <strong>startup</strong> a été monté pour nous permettre d'apprendre a gérer des clients et de realisé <strong>plusieurs projets</strong>
         </p>
 
-            <div class="row" style="width: 95%;margin: 0 auto;">
+            <div class="row" style="width: 95%;margin: 0 auto;" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-md-6 text-center resp-about" style="padding-left: 62px;padding-right: 0;">
                     <a class="none-deco" href="https://bastiendev.com/" target="_blank">
                         <img alt="" class="img-ronde" src="https://place-hold.it/300x300/666/fff.png/000">
@@ -45,7 +45,7 @@
                     <span class="txt-img-ronde"><span class="resp-emoji">⬅️ </span>️Bastien Oeuvrard</span>
                 </div>
 
-                <div class="col-md-6 text-center resp-about" style="padding-right: 0;">
+                <div class="col-md-6 text-center resp-about" style="padding-right: 0;" data-aos="fade-up" data-aos-duration="1000">
                     <a class="none-deco" href="https://jeremydev.fr" target="_blank">
                         <img alt="" class="img-ronde" src="https://place-hold.it/300x300/666/fff.png/000">
                     </a>
@@ -66,25 +66,25 @@
                 <h2 class="mb-5">Ce qu'on peut vous offrir !</h2>
             </div>
             <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
+                <div data-aos="zoom-out-down" class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span  class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
                     <h4><strong>Responsive</strong></h4>
                     <p class="text-faded mb-0">Un design pour toute les tailles d'écran</p>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-desktop"></i></span>
+                <div data-aos="zoom-out-down" data-aos-duration="1000" class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <span  class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-desktop"></i></span>
                     <h4><strong>Developper Web</strong></h4>
                     <p class="text-faded mb-0">
                         Developpement de vos site web
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-basket"></i></span>
+                <div data-aos="zoom-out-down" data-aos-duration="2000" class="col-lg-3 col-md-6">
+                    <span  class="service-icon rounded-circle mx-auto mb-3"><i class="icon-basket"></i></span>
                     <h4><strong>E-commerce</strong></h4>
                     <p class="text-faded mb-0">Et meme vos site E-commerce</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-settings"></i></span>
+                <div data-aos="zoom-out-down" data-aos-duration="3000" class="col-lg-3 col-md-6">
+                    <span  class="service-icon rounded-circle mx-auto mb-3"><i class="icon-settings"></i></span>
                     <h4><strong>Maintenance</strong></h4>
                     <p class="text-faded mb-0">Un service de maintenance est possible</p>
                 </div>
@@ -95,76 +95,76 @@
 {#    fin section service#}
 
 {# Début Activites #}
-<section id="projet">
-    <h2 class="text-center" style="margin-top: 10px; color: #5289D8">Activités</h2>
-    <h3 class=" text-center" style="color: #676767">Nos principaux projets!</h3>
-    <div class="ag-container-shops">
-        <div class="js-flickity-slider">
-            <div class="js-carousel-cell">
-                <div class="ag-shop-card_box-wrap">
-                    <div class="ag-shop-card_box">
-                        <div class="ag-shop-card_body">
-                            <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/bastien.jpg') }});"></div>
-                            <a href="https://bastiendev.com/" target="_blank" class="ag-shop-card-body_link"><img src="{{ asset('build/bastien.jpg') }}" alt="Falu" class="ag-shop-card-body_img"></a>
-                        </div>
-                        <div class="ag-shop-card_footer">
-                            <a href="https://bastiendev.com/" target="_blank" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
-                            <span class="ag-shop-card-footer_title">Portfolio Bastien</span>
-                            <span class="ag-shop-card-footer_products">BJTechnoDev</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="js-carousel-cell">
-                <div class="ag-shop-card_box-wrap">
-                    <div class="ag-shop-card_box">
-                        <div class="ag-shop-card_body">
-                            <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/Jeremy.png') }});"></div>
-                            <a href="https://jeremydev.fr/" class="ag-shop-card-body_link"><img src="{{ asset('build/Jeremy.png') }}" alt="Falu" class="ag-shop-card-body_img"></a>
-                        </div>
-                        <div class="ag-shop-card_footer">
-                            <a href="https://jeremydev.fr/" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
-                            <span class="ag-shop-card-footer_title">Portfolio Jérémy</span>
-                            <span class="ag-shop-card-footer_products">BJTechnoDev</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="js-carousel-cell">
-                <div class="ag-shop-card_box-wrap">
-                    <div class="ag-shop-card_box">
-                        <div class="ag-shop-card_body">
-                            <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/ComingSoon.jpg') }});"></div>
-                            <a href="#" class="ag-shop-card-body_link"><img src="{{ asset('build/ComingSoon.jpg') }}" alt="Falu" class="ag-shop-card-body_img"></a>
-                        </div>
-                        <div class="ag-shop-card_footer">
-                            <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
-                            <span class="ag-shop-card-footer_title">Coming Soon</span>
-                            <span class="ag-shop-card-footer_products">BJTechnoDev</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="js-carousel-cell">
-                <div class="ag-shop-card_box-wrap">
-                    <div class="ag-shop-card_box">
-                        <div class="ag-shop-card_body">
-                            <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/ComingSoon.jpg') }});"></div>
-                            <a href="#" class="ag-shop-card-body_link"><img src="{{ asset('build/ComingSoon.jpg') }}" alt="Falu" class="ag-shop-card-body_img"></a>
-                        </div>
-                        <div class="ag-shop-card_footer">
-                            <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
-                            <span class="ag-shop-card-footer_title">Coming Soon</span>
-                            <span class="ag-shop-card-footer_products">BJTechnoDev</span>
+    <section id="projet">
+        <h2 class="text-center" style="margin-top: 10px; color: #5289D8">Activités</h2>
+        <h3 class=" text-center" style="color: #676767">Nos principaux projets!</h3>
+        <div data-aos="fade-down" data-aos-duration="1500" data-aos-easing="linear" class="ag-container-shops">
+            <div class="js-flickity-slider">
+                <div class="js-carousel-cell">
+                    <div class="ag-shop-card_box-wrap">
+                        <div class="ag-shop-card_box">
+                            <div class="ag-shop-card_body">
+                                <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/bastien.jpg') }});"></div>
+                                <a href="https://bastiendev.com/" target="_blank" class="ag-shop-card-body_link"><img src="{{ asset('build/bastien.jpg') }}" alt="Falu" class="ag-shop-card-body_img"></a>
+                            </div>
+                            <div class="ag-shop-card_footer">
+                                <a href="https://bastiendev.com/" target="_blank" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                <span class="ag-shop-card-footer_title">Portfolio Bastien</span>
+                                <span class="ag-shop-card-footer_products">BJTechnoDev</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="js-carousel-cell">
+                    <div class="ag-shop-card_box-wrap">
+                        <div class="ag-shop-card_box">
+                            <div class="ag-shop-card_body">
+                                <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/Jeremy.png') }});"></div>
+                                <a href="https://jeremydev.fr/" class="ag-shop-card-body_link"><img src="{{ asset('build/Jeremy.png') }}" alt="Falu" class="ag-shop-card-body_img"></a>
+                            </div>
+                            <div class="ag-shop-card_footer">
+                                <a href="https://jeremydev.fr/" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                <span class="ag-shop-card-footer_title">Portfolio Jérémy</span>
+                                <span class="ag-shop-card-footer_products">BJTechnoDev</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-carousel-cell">
+                    <div class="ag-shop-card_box-wrap">
+                        <div class="ag-shop-card_box">
+                            <div class="ag-shop-card_body">
+                                <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/ComingSoon.jpg') }});"></div>
+                                <a href="#" class="ag-shop-card-body_link"><img src="{{ asset('build/ComingSoon.jpg') }}" alt="Falu" class="ag-shop-card-body_img"></a>
+                            </div>
+                            <div class="ag-shop-card_footer">
+                                <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                <span class="ag-shop-card-footer_title">Coming Soon</span>
+                                <span class="ag-shop-card-footer_products">BJTechnoDev</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="js-carousel-cell">
+                    <div class="ag-shop-card_box-wrap">
+                        <div class="ag-shop-card_box">
+                            <div class="ag-shop-card_body">
+                                <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/ComingSoon.jpg') }});"></div>
+                                <a href="#" class="ag-shop-card-body_link"><img src="{{ asset('build/ComingSoon.jpg') }}" alt="Falu" class="ag-shop-card-body_img"></a>
+                            </div>
+                            <div class="ag-shop-card_footer">
+                                <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                <span class="ag-shop-card-footer_title">Coming Soon</span>
+                                <span class="ag-shop-card-footer_products">BJTechnoDev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 {# Fint activites #}
