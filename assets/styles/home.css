@@ -268,7 +268,10 @@
 .ag-shop-card-footer_arrow {
     max-width: 16px;
 }
-
+.flickity-viewport,
+.js-flickity-slider{
+    outline: none !important;
+}
 
 @media only screen and (max-width: 767px) {
     .ag-format-container {
