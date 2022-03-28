@@ -1,87 +1,87 @@
-{% extends 'base.html.twig' %}
+{#{% extends 'base.html.twig' %}#}
 
-{% block body %}
-    <form action="" method="POST" name="">
-        <div class="container">
-            <div class="screen">
-                <div class="screen-header">
-                    <div class="screen-header-left">
-                        <div class="screen-header-button close"></div>
-                        <div class="screen-header-button maximize"></div>
-                        <div class="screen-header-button minimize"></div>
-                    </div>
-                    <div class="screen-header-right">
-                        <div class="screen-header-ellipsis"></div>
-                        <div class="screen-header-ellipsis"></div>
-                        <div class="screen-header-ellipsis"></div>
-                    </div>
-                </div>
-                <div class="screen-body">
-                    <div class="screen-body-item left">
-                        <div class="app-title">
-                            <span>CONTACT</span>
-                            <span>ME</span>
-                        </div>
-                        <div style="padding-top: 30px;" class="direct-contact-container">
+{#{% block body %}#}
+{#    <form action="" method="POST" name="">#}
+{#        <div class="container">#}
+{#            <div class="screen">#}
+{#                <div class="screen-header">#}
+{#                    <div class="screen-header-left">#}
+{#                        <div class="screen-header-button close"></div>#}
+{#                        <div class="screen-header-button maximize"></div>#}
+{#                        <div class="screen-header-button minimize"></div>#}
+{#                    </div>#}
+{#                    <div class="screen-header-right">#}
+{#                        <div class="screen-header-ellipsis"></div>#}
+{#                        <div class="screen-header-ellipsis"></div>#}
+{#                        <div class="screen-header-ellipsis"></div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="screen-body">#}
+{#                    <div class="screen-body-item left">#}
+{#                        <div class="app-title">#}
+{#                            <span>CONTACT</span>#}
+{#                            <span>ME</span>#}
+{#                        </div>#}
+{#                        <div style="padding-top: 30px;" class="direct-contact-container">#}
 
-                            <ul class="contact-list">
-                                <li class="list-item"><i class="fa fa-map-marker-alt fa-2x"><span class="contact-text place"><a href="https://www.google.com/maps/place/38790+Saint-Georges-d'Esp%C3%A9ranche/@45.5628023,5.0539773,13z/data=!3m1!4b1!4m5!3m4!1s0x47f4d6acadf37b5f:0x408ab2ae4be6c00!8m2!3d45.555929!4d5.078498" target="_blank">Saint-Georges-d'Espéranche</a></span></i></li>
+{#                            <ul class="contact-list">#}
+{#                                <li class="list-item"><i class="fa fa-map-marker-alt fa-2x"><span class="contact-text place"><a href="https://www.google.com/maps/place/38790+Saint-Georges-d'Esp%C3%A9ranche/@45.5628023,5.0539773,13z/data=!3m1!4b1!4m5!3m4!1s0x47f4d6acadf37b5f:0x408ab2ae4be6c00!8m2!3d45.555929!4d5.078498" target="_blank">Saint-Georges-d'Espéranche</a></span></i></li>#}
 
-                                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:0630729873" title="Give me a call" target="_blank">+33 630729873</a></span></i></li>
+{#                                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:0630729873" title="Give me a call" target="_blank">+33 630729873</a></span></i></li>#}
 
-                                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:bastien.98@orange.fr" title="Send me an email" target="_blank">bastien.98@orange.fr</a></span></i></li>
+{#                                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:bastien.98@orange.fr" title="Send me an email" target="_blank">bastien.98@orange.fr</a></span></i></li>#}
 
-                            </ul>
+{#                            </ul>#}
 
-                            <hr>
-                            <ul class="social-media-list">
-                                <li><a href="https://github.com/Sairkko" target="_blank" class="contact-icon">
-                                        <i class="fab fa-github" aria-hidden="true"></i></a>
-                                </li>
-                                <li><a href="https://www.linkedin.com/in/bastien-oeuvrard-24480069/" target="_blank" class="contact-icon">
-                                        <i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                                </li>
-                                <li><a href="https://twitter.com/home" target="_blank" class="contact-icon">
-                                        <i class="fab fa-twitter" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                            <hr>
+{#                            <hr>#}
+{#                            <ul class="social-media-list">#}
+{#                                <li><a href="https://github.com/Sairkko" target="_blank" class="contact-icon">#}
+{#                                        <i class="fab fa-github" aria-hidden="true"></i></a>#}
+{#                                </li>#}
+{#                                <li><a href="https://www.linkedin.com/in/bastien-oeuvrard-24480069/" target="_blank" class="contact-icon">#}
+{#                                        <i class="fab fa-linkedin-in" aria-hidden="true"></i></a>#}
+{#                                </li>#}
+{#                                <li><a href="https://twitter.com/home" target="_blank" class="contact-icon">#}
+{#                                        <i class="fab fa-twitter" aria-hidden="true"></i></a>#}
+{#                                </li>#}
+{#                            </ul>#}
+{#                            <hr>#}
 
-                        </div>
-                    </div>
-                    <div class="screen-body-item">
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="screen-body-item">#}
 
-                        <div class="app-form">
-                            {{ form_start(our_form) }}
-                            <div class="app-form-group">
-                                {{ form_row(our_form.fullName, {'attr': {'class': 'form-control'}}) }}
-                            </div>
-                            <div class="app-form-group">
-                                {{ form_row(our_form.email, {'attr': {'class': 'form-control'}}) }}
-                            </div>
-                            <div class="app-form-group">
-                                {{ form_row(our_form.subject, {'attr': {'class': 'form-control'}}) }}
-                            </div>
-                            <div class="form-floating">
-                                {{ form_row(our_form.message, {'attr': {'class': 'form-control'}}) }}
-                            </div>
-                            <div class="app-form-group buttons">
-                                {#                            <a class="couleur app-form-button" type="button">CANCEL</a>#}
-                                {#                            <button style="margin-left: 20px; color: mediumorchid" class="btn couleur app-form-button" type="button">SEND</button>#}
-                                <input name="Send" value="Envoyer" type="submit" class="btn-lg btn btn-secondary app-form-button">
-                            </div>
-                            {{ form_end(our_form) }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
-    <div class="credits">
-        <svg class="dribbble" viewBox="0 0 200 200">
-            <g stroke="#ffffff" fill="none">
-            </g>
-        </svg>
-    </div>
-    </div>
-{% endblock %}
+{#                        <div class="app-form">#}
+{#                            {{ form_start(our_form) }}#}
+{#                            <div class="app-form-group">#}
+{#                                {{ form_row(our_form.fullName, {'attr': {'class': 'form-control'}}) }}#}
+{#                            </div>#}
+{#                            <div class="app-form-group">#}
+{#                                {{ form_row(our_form.email, {'attr': {'class': 'form-control'}}) }}#}
+{#                            </div>#}
+{#                            <div class="app-form-group">#}
+{#                                {{ form_row(our_form.subject, {'attr': {'class': 'form-control'}}) }}#}
+{#                            </div>#}
+{#                            <div class="form-floating">#}
+{#                                {{ form_row(our_form.message, {'attr': {'class': 'form-control'}}) }}#}
+{#                            </div>#}
+{#                            <div class="app-form-group buttons">#}
+{#                                #}{#                            <a class="couleur app-form-button" type="button">CANCEL</a>#}
+{#                                #}{#                            <button style="margin-left: 20px; color: mediumorchid" class="btn couleur app-form-button" type="button">SEND</button>#}
+{#                                <input name="Send" value="Envoyer" type="submit" class="btn-lg btn btn-secondary app-form-button">#}
+{#                            </div>#}
+{#                            {{ form_end(our_form) }}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </form>#}
+{#    <div class="credits">#}
+{#        <svg class="dribbble" viewBox="0 0 200 200">#}
+{#            <g stroke="#ffffff" fill="none">#}
+{#            </g>#}
+{#        </svg>#}
+{#    </div>#}
+{#    </div>#}
+{#{% endblock %}#}

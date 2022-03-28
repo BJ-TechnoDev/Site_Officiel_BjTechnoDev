@@ -1,27 +1,107 @@
-{#{% extends 'base.html.twig' %}#}
+{% extends 'base.html.twig' %}
 
 
-{#{% block body %}#}
-{#    <div align="center" class="bg-white p-5 contact-form">#}
-{#        <div class="form-group">#}
-{#            {{ form_start(our_form) }}#}
-{#            {{ form_row(our_form.fullName, {'attr': {'class': 'form-control'}}) }}#}
-
-{#        </div>#}
-{#        <div class="form-group">#}
-{#            {{ form_row(our_form.email, {'attr': {'class': 'form-control'}}) }}#}
-
-{#        </div>#}
-{#        <div class="form-group">#}
-{#            {{ form_row(our_form.message, {'attr': {'class': 'form-control'}}) }}#}
-
-{#        </div>#}
-
-{#        <div class="form-group">#}
-{#            <input type="submit" value="Send" class="btn btn-secondary py-3 px-5">#}
-{#        </div>#}
-{#        {{ form_end(our_form) }}#}
-{#    </div>#}
-
-{#    </div>#}
-{#{% endblock %}#}
+{% block body %}
+    {% for message in app.flashes('success') %}
+        <div style="float: right; margin-top: 10px; margin-right: 10px" class="alert alert-dismissible alert-success flash-notice" role="alert" id="success-alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+    {% for message in app.flashes('error') %}
+    <div style="float: right; margin-top: 10px; margin-right: 10px" class="alert alert-danger flash-notice" role="alert" id="danger-alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section" style="text-shadow: 3px 2px black">Contact Us ✉️</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="wrapper">
+                    <div class="row no-gutters">
+                        <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                <h3 class="mb-4" style="text-shadow: -2px -2px white">Write us</h3>
+                                {{ form_start(our_form) }}
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                               {{ form_row(our_form.fullName, {'attr': {'class': 'form-control'}}) }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                {{ form_row(our_form.email, {'attr': {'class': 'form-control'}}) }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                {{ form_row(our_form.subject, {'attr': {'class': 'form-control'}}) }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                {{ form_row(our_form.message, {'attr': {'class': 'form-control'}}) }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="submit" value="Send Message" class="btn" style="background-color: #5289D8; color: #F9F190">
+                                                <div class="submitting"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{ form_end(our_form) }}
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
+                                <h3 style="text-shadow: -2px -1px white">Contact information</h3>
+                                <p class="mb-4" style="color: white">We're open for any suggestion or just to have a chat</p>
+                                <div class="dbox w-100 d-flex align-items-start">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <a href="https://www.google.fr/maps/place/Lyon/@45.7579293,4.7650902,12z/data=!3m1!4b1!4m5!3m4!1s0x47f4ea516ae88797:0x408ab2ae4bb21f0!8m2!3d45.764043!4d4.835659" target="_blank"><span class="fa fa-map-marker" style="color: #F9F190"></span></a>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p><a href="https://www.google.fr/maps/place/Lyon/@45.7579293,4.7650902,12z/data=!3m1!4b1!4m5!3m4!1s0x47f4ea516ae88797:0x408ab2ae4bb21f0!8m2!3d45.764043!4d4.835659" target="_blank"><span style="color: #5289D8">Address:</span><span style="color: #F9F190"> Lyon, France</span></a></p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                      <span class="fa fa-phone" style="color: #F9F190"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p><a href="tel:0630729873"><span style="color: #5289D8">Phone:</span><span style="color: #F9F190"> +33 6 30 72 98 73</span></a></p>
+                                        <p><a href="tel:0617022776"><span style="color: #5289D8">Phone:</span><span style="color: #F9F190"> +33 6 17 02 27 76</span></a></p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <a href="mailto:bjtechnodev@gmail.com"><span class="fa fa-paper-plane" style="color: #F9F190"></span></a>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p><a href="mailto:bjtechnodev@gmail.com"><span style="color: #5289D8">Email:</span><span style="color: #F9F190"> bjtechnodev@gmail.com</span></a></p>
+                                    </div>
+                                </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-globe" style="color: #F9F190"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p><a href="https://bastiendev.com/"><span style="color: #5289D8">Website</span><span style="color: #F9F190"> bastiendev.com</span></a></p>
+                                        <p><a href="https://jeremydev.fr/"><span style="color: #5289D8">Website</span><span style="color: #F9F190"> jeremydev.fr</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

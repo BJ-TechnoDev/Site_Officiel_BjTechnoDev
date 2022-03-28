@@ -6,6 +6,7 @@ import '../js/question_show';
 import '../js/scroll';
 import '../js/init';
 import '../js/activities';
+import '../js/alert';
 import AOS from 'aos';
 
 AOS.init();

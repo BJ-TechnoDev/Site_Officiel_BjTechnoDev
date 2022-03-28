@@ -8177,7 +8177,7 @@ textarea.form-control {
     display: block; }
 
 .ftco-section {
-    padding: 12em 0; }
+    padding: 7em 0; }
 .ftco-section h2 {
     margin-bottom: 0; }
 
@@ -8266,3 +8266,57 @@ footer {
 .footer-09 .subscribe-form .form-group .submit:hover, .footer-09 .subscribe-form .form-group .submit:focus {
     text-decoration: none !important;
     outline: none !important; }
+
+.heading-section {
+    font-size: 28px;
+    color: #000; }
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18); }
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0; }
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+
+.contact-wrap {
+    background: #272a34; }
+.contact-wrap h3 {
+    color: #fff; }
+
+.info-wrap {
+    background: #1c1e25; }
+.info-wrap h3 {
+    color: white;
+    font-size: 18px;
+    position: relative; }
+.info-wrap .dbox {
+    width: 100%;
+    margin-bottom: 25px; }
+.info-wrap .dbox:last-child {
+    margin-bottom: 0; }
+.info-wrap .dbox p {
+    margin-bottom: 0; }
+.info-wrap .dbox p span {
+    font-weight: 400;
+    color: #fff; }
+.info-wrap .dbox p a {
+    color: rgba(255, 255, 255, 0.3); }
+.info-wrap .dbox .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.02); }
+.info-wrap .dbox .icon span {
+    font-size: 20px;
+    color: #fff; }
+.info-wrap .dbox .text {
+    width: calc(100% - 50px); }

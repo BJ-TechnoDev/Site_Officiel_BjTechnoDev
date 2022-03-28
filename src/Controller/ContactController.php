@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Mailer\MailerInterface;
@@ -33,16 +34,19 @@ class ContactController extends AbstractController
                 ->subject($contactFormData['subject'])
                 ->text('Name: '.$contactFormData['fullName'].\PHP_EOL.'Subject: '.$contactFormData['subject'].\PHP_EOL.'Email: '.$contactFormData['email'].\PHP_EOL. 'Message: '.$contactFormData['message'],
                     'text/plain');
-            $mailer->send($message);
+            try {
+                $mailer->send($message);
 
-            $this->addFlash('success', 'Your message has been sent');
-
+                $this->addFlash('success', '✅ Your message has been sent!');
+            } catch (TransportExceptionInterface $e) {
+                $this->addFlash('error', '❌ Your message has an error!');
+            }
             return $this->redirectToRoute('contact');
         }
 
 
 
-        return $this->render('contact/mail.html.twig', [
+        return $this->render('contact/index.html.twig', [
             'our_form' => $form->createView()
         ]);
 
