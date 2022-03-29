@@ -322,3 +322,10 @@
 
 
 /* Fin activitites */
+
+/* navbar phone */
+.mobileversion {
+    border: 1px black solid;
+    box-shadow: 6px 0px 4px 0px black;
+}
+/* fin */
