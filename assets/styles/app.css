@@ -32,9 +32,16 @@ body {
     background-size: cover;
 }
 
-.swiper-button-prev:after,
+.swiper-button-prev:after
+ {
+    color: #fefefe;
+    position: relative;
+    right: 30%;
+}
 .swiper-button-next:after {
     color: #fefefe;
+    position: relative;
+    left: 30%;
 }
 
 .swiper .swiper-slide-active .Middle {
