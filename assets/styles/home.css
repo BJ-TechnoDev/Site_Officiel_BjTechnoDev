@@ -21,6 +21,7 @@
     height: 300px;
 }
 .txt-img-ronde{
+    color: #5289D8;
     font-weight: bold;
     font-size: 28px !important;
 }
@@ -74,6 +75,7 @@
 }
 .text-faded {
     color: #F9F190 !important;
+    font-size: 16px;
 }
 .content-section-heading h3{
     color: #F9F190 !important;

@@ -5,7 +5,7 @@
 
 {% block body %}
 
-{#    debut slider#}
+    {#    debut slider#}
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
 
@@ -28,9 +28,9 @@
         <div class="swiper-button-next" style="margin-right: 50px; color: black"></div>
         <div class="swiper-button-prev" style="margin-left: 50px; color: black"></div>
     </div>
-{#    fin slider#}
+    {#    fin slider#}
 
-{#    about#}
+    {#    about#}
 
     <section id="about">
         <h1 class="text-center" style="color: #5289d8;margin-top: 20px;font-size: 70px;">BJ TechnoDev</h1>
@@ -40,32 +40,32 @@
             Notre <strong>startup</strong> a été monté pour nous permettre d'apprendre a gérer des clients et de realisé <strong>plusieurs projets</strong>
         </p>
 
-            <div class="row" style="width: 95%;margin: 0 auto;" data-aos="fade-up" data-aos-duration="1000">
-                <div class="col-md-6 text-center resp-about" style="padding-left: 62px;padding-right: 0;">
-                    <a class="none-deco" href="https://bastiendev.com/" target="_blank">
-                        <img alt="photo" class="img-ronde" src="{{ asset('build/img-about-bastien.jpg') }}">
-                    </a>
-                    <span class="txt-img-ronde">Bastien Oeuvrard</span>
-                </div>
+        <div class="row" style="width: 95%;margin: 0 auto;" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-md-6 text-center resp-about" style="padding-left: 62px;padding-right: 0;">
+                <a class="none-deco" href="https://bastiendev.com/" target="_blank">
+                    <img alt="photo" class="img-ronde" src="{{ asset('build/img-about-bastien.jpg') }}">
 
-                <div class="col-md-6 text-center resp-about" style="padding-right: 0;" data-aos="fade-up" data-aos-duration="1000">
-                    <a class="none-deco" href="https://jeremydev.fr" target="_blank">
-                        <img alt="" class="img-ronde" src="{{ asset('build/img-about-jeremy.jpg') }}">
-                    </a>
-                    <span class="txt-img-ronde">Jérémy ROSSI</span>
-                </div>
+                <span class="txt-img-ronde">Bastien Oeuvrard</span></a>
             </div>
+
+            <div class="col-md-6 text-center resp-about" style="padding-right: 0;" data-aos="fade-up" data-aos-duration="1000">
+                <a class="none-deco" href="https://jeremydev.fr" target="_blank">
+                    <img alt="" class="img-ronde" src="{{ asset('build/img-about-jeremy.jpg') }}">
+
+                <span class="txt-img-ronde">Jérémy ROSSI</span></a>
+            </div>
+        </div>
 
     </section>
 
-{#    fin about#}
+    {#    fin about#}
 
-{#    section service#}
+    {#    section service#}
 
     <section class="content-section text-white text-center" id="services">
         <div class="container px-4 px-lg-5">
             <div class="content-section-heading">
-                <h2 class="text-secondary mb-0" style="color: #F9F190">Services</h2>
+                <h2 class="text-secondary mb-0" style="color: #F9F190 !important">Services</h2>
                 <h2 class="mb-5">Ce qu'on peut vous offrir !</h2>
             </div>
             <div class="row gx-4 gx-lg-5">
@@ -95,9 +95,9 @@
         </div>
     </section>
 
-{#    fin section service#}
+    {#    fin section service#}
 
-{# Début Activites #}
+    {# Début Activites #}
     <section id="projet">
         <h2 class="text-center" style="margin-top: 10px; color: #5289D8">Activités</h2>
         <h3 class=" text-center" style="color: #676767">Nos principaux projets!</h3>
@@ -170,5 +170,5 @@
     </section>
 
 
-{# Fint activites #}
+    {# Fint activites #}
 {% endblock %}
