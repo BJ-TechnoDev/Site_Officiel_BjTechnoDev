@@ -8,7 +8,16 @@
     {#    debut slider#}
 
     <div class="swiper mySwiper">
-
+        {% for message in app.flashes('success') %}
+            <div style="float: right; margin-top: 10px" class="alert alert-dismissible alert-success flash-notice" role="alert" id="success-alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% for message in app.flashes('error') %}
+            <div style="float: right; margin-top: 10px" class="alert alert-danger flash-notice" role="alert" id="danger-alert">
+                {{ message }}
+            </div>
+        {% endfor %}
         <div class="swiper-wrapper">
 
             <div class="swiper-slide content">
@@ -176,7 +185,7 @@
 
     {# Section contact #}
 
-    <section style="background-color: #5289d8" class="" id="contact">
+    <section style="background-color: #5289d8" class="" id="contactus">
 
         <div class="container" >
 
@@ -185,7 +194,7 @@
                     <h2 class="heading-section" style="margin-top: 30px;;text-shadow: 3px 2px 2px black; color: #F9F190; font-size: 35px">Contact Us ✉️</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" id="">
                 <div class="col-lg-10">
                     <div class="wrapper">
                         <div class="row no-gutters">
@@ -267,16 +276,7 @@
 
                                 </div>
                             </div>
-                            {% for message in app.flashes('success') %}
-                                <div style="float: right; margin-top: 10px" class="alert alert-dismissible alert-success flash-notice" role="alert" id="success-alert">
-                                    {{ message }}
-                                </div>
-                            {% endfor %}
-                            {% for message in app.flashes('error') %}
-                                <div style="float: right; margin-top: 10px" class="alert alert-danger flash-notice" role="alert" id="danger-alert">
-                                    {{ message }}
-                                </div>
-                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
