@@ -37,9 +37,9 @@ class ContactController extends AbstractController
             try {
                 $mailer->send($message);
 
-                $this->addFlash('success', '✅ Your message has been sent!');
+                $this->addFlash('success', '✅ Votre message a bien été envoyé!');
             } catch (TransportExceptionInterface $e) {
-                $this->addFlash('error', '❌ Your message has an error!');
+                $this->addFlash('error', '❌ Une erreur c\'est produite!');
             }
             return $this->redirectToRoute('homepage');
         }
