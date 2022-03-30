@@ -13,7 +13,7 @@ use Symfony\Component\Mailer\MailerInterface;
 class ContactController extends AbstractController
 {
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/", name="contact")
      */
 
 
@@ -41,12 +41,12 @@ class ContactController extends AbstractController
             } catch (TransportExceptionInterface $e) {
                 $this->addFlash('error', '❌ Your message has an error!');
             }
-            return $this->redirectToRoute('contact');
+            return $this->redirectToRoute('homepage');
         }
 
 
 
-        return $this->render('contact/index.html.twig', [
+        return $this->render('front/index.html.twig', [
             'our_form' => $form->createView()
         ]);
 

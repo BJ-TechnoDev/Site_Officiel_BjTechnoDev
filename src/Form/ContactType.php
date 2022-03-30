@@ -33,7 +33,7 @@ class ContactType extends AbstractType
                 )
             ])
             ->add('message', TextareaType::class, [
-                'attr' => ['placeholder' => 'Your Message here', 'rows' => 7]
+                'attr' => ['placeholder' => 'Your Message here', 'rows' => 4]
             ])
         ;
     }
