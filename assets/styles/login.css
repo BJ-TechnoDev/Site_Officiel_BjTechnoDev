@@ -18,10 +18,8 @@ label {
     margin-top: 6px;
     line-height: 17px;
 }
-label.newpassword {
-        margin-top: 6px;
-        line-height: 17px;
-        margin-right: 10px;
+.newpassword {
+        margin-left: 20px;
 }
 
 a {
