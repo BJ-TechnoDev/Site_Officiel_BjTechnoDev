@@ -2,6 +2,8 @@
 
 namespace App\Form;
 
+use Karser\Recaptcha3Bundle\Form\Recaptcha3Type;
+use Karser\Recaptcha3Bundle\Validator\Constraints\Recaptcha3;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -34,8 +36,7 @@ class ContactType extends AbstractType
             ])
             ->add('message', TextareaType::class, [
                 'attr' => ['placeholder' => 'Your Message here', 'rows' => 4]
-            ])
-        ;
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver)

@@ -144,13 +144,13 @@
 }
 .ag-card-bg {
     height: 100%;
-    width: 200%;
+    width: 130%;
     background-position: 50%;
     background-size: cover;
 
     position: absolute;
     top: 0;
-    left: -50%;
+    left: -13%;
 
     -webkit-transition: height .6s;
     -moz-transition: height .6s;
@@ -228,7 +228,8 @@
     transition: top .4s;
 }
 .ag-shop-card-body_img {
-    max-width: 100%;
+    width: auto;
+    height: 100%
 }
 .ag-shop-card_footer {
     padding: 15px 30px;

@@ -185,10 +185,14 @@ caption {
 th {
     text-align: inherit; }
 
+
+
 label {
     display: inline-block;
     margin-bottom: 0.5rem;
-    color: white;
+    color: black;
+    margin-right: 10px;
+
 }
 
 button {
@@ -308,8 +312,6 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 500;
     line-height: 1.2; }
 
-h1, .h1 {
-    font-size: 2.5rem; }
 
 h2, .h2 {
     font-size: 2rem; }
@@ -359,7 +361,7 @@ hr {
 small,
 .small {
     font-size: 80%;
-    font-weight: 400; }
+    font-weight: 400;}
 
 mark,
 .mark {

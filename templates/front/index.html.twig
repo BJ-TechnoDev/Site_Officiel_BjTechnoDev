@@ -125,70 +125,36 @@
         <h2 class="text-center" style="margin-top: 10px; color: #5289D8">Activités</h2>
         <h3 class=" text-center" style="color: #676767">Nos principaux projets!</h3>
         <div data-aos="fade-down" data-aos-duration="1500" data-aos-easing="linear" class="ag-container-shops">
+
             <div class="js-flickity-slider">
+                {% for projet in projets %}
                 <div class="js-carousel-cell">
+
                     <div class="ag-shop-card_box-wrap">
+
                         <div class="ag-shop-card_box">
+
                             <div class="ag-shop-card_body">
-                                <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/bastien.jpg') }});"></div>
-                                <a href="https://bastiendev.com/" target="_blank" class="ag-shop-card-body_link"><img src="{{ asset('build/bastien.jpg') }}" alt="Falu" class="ag-shop-card-body_img"></a>
+
+                                <div class=" ag-card-bg" style=""><img class="js-card-bg ag-card-bg" src="{{asset('uploads/img_bg/'~projet.imgBg)}}" alt=""></div>
+                                <a href="{{projet.link}}" target="_blank" class="ag-shop-card-body_link"><img src="{{asset('uploads/img_rond/'~projet.imgRond)}}" alt="Falu" class="ag-shop-card-body_img"></a>
                             </div>
                             <div class="ag-shop-card_footer">
-                                <a href="https://bastiendev.com/" target="_blank" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
-                                <span class="ag-shop-card-footer_title">Portfolio Bastien</span>
+                                <a href="{{ projet.link }}" target="_blank" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                <span class="ag-shop-card-footer_title">{{ projet.titre }}</span>
                                 <span class="ag-shop-card-footer_products">BJTechnoDev</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="js-carousel-cell">
-                    <div class="ag-shop-card_box-wrap">
-                        <div class="ag-shop-card_box">
-                            <div class="ag-shop-card_body">
-                                <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/Jeremy.png') }});"></div>
-                                <a href="https://jeremydev.fr/" class="ag-shop-card-body_link"><img src="{{ asset('build/Jeremy.png') }}" alt="Falu" class="ag-shop-card-body_img"></a>
                             </div>
-                            <div class="ag-shop-card_footer">
-                                <a href="https://jeremydev.fr/" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
-                                <span class="ag-shop-card-footer_title">Portfolio Jérémy</span>
-                                <span class="ag-shop-card-footer_products">BJTechnoDev</span></div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="js-carousel-cell">
-                    <div class="ag-shop-card_box-wrap">
-                        <div class="ag-shop-card_box">
-                            <div class="ag-shop-card_body">
-                                <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/ComingSoon.jpg') }});"></div>
-                                <a href="#" class="ag-shop-card-body_link"><img src="{{ asset('build/ComingSoon.jpg') }}" alt="Falu" class="ag-shop-card-body_img"></a>
-                            </div>
-                            <div class="ag-shop-card_footer">
-                                <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
-                                <span class="ag-shop-card-footer_title">Coming Soon</span>
-                                <span class="ag-shop-card-footer_products">BJTechnoDev</span></div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="js-carousel-cell">
-                    <div class="ag-shop-card_box-wrap">
-                        <div class="ag-shop-card_box">
-                            <div class="ag-shop-card_body">
-                                <div class="js-card-bg ag-card-bg" style="background-image: url({{ asset('build/ComingSoon.jpg') }});"></div>
-                                <a href="#" class="ag-shop-card-body_link"><img src="{{ asset('build/ComingSoon.jpg') }}" alt="Falu" class="ag-shop-card-body_img"></a>
-                            </div>
-                            <div class="ag-shop-card_footer">
-                                <a href="#" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
-                                <span class="ag-shop-card-footer_title">Coming Soon</span>
-                                <span class="ag-shop-card-footer_products">BJTechnoDev</span>
-                            </div>
-                        </div>
                     </div>
-                </div>
 
+
+                </div>
+                {% endfor %}
             </div>
+
         </div>
     </section>
 
@@ -240,6 +206,13 @@
                                             <div class="form-group">
                                                 <input type="submit" value="Envoyez Votre Message" class="btn" style="background-color: #5289D8; color: #F9F190">
                                                 <div class="submitting"></div>
+                                                <input type="hidden" id="form_captcha" name="form[captcha]" /><script>
+                                                    var recaptchaCallback_form_captcha = function() {
+                                                        grecaptcha.execute('6Ldx4rsfAAAAAJlD06YOFifaIdlkvfvHpe3QKzvH', {action: 'contact'}).then(function(token) {
+                                                            document.getElementById('form_captcha').value = token;
+                                                        });
+                                                    };
+                                                </script><script src="https://www.google.com/recaptcha/api.js?render=6Ldx4rsfAAAAAJlD06YOFifaIdlkvfvHpe3QKzvH&onload=recaptchaCallback_form_captcha" async defer></script>
                                             </div>
                                         </div>
                                     </div>
