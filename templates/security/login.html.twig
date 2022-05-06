@@ -11,6 +11,16 @@
 </head>
 <div id="particles-js"></div>
 <body class="login">
+{% for message in app.flashes('success') %}
+    <div style="margin-top: 10px" class="alert alert-dismissible alert-success flash-notice" role="alert" id="success-alert">
+        {{ message }}
+    </div>
+{% endfor %}
+{% for message in app.flashes('error') %}
+    <div style="margin-top: 10px" class="alert alert-danger flash-notice" role="alert" id="danger-alert">
+        {{ message }}
+    </div>
+{% endfor %}
 <div class="container">
     <div class="login-container-wrapper clearfix">
         <div class="logo">
@@ -44,7 +54,6 @@
     </h4>
 </div>
 {% block javascripts %}
-    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     {{ encore_entry_script_tags('login') }}
 {% endblock %}

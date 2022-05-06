@@ -206,13 +206,14 @@
                                             <div class="form-group">
                                                 <input type="submit" value="Envoyez Votre Message" class="btn" style="background-color: #5289D8; color: #F9F190">
                                                 <div class="submitting"></div>
-                                                <input type="hidden" id="form_captcha" name="form[captcha]" /><script>
-                                                    var recaptchaCallback_form_captcha = function() {
-                                                        grecaptcha.execute('6Ldx4rsfAAAAAJlD06YOFifaIdlkvfvHpe3QKzvH', {action: 'contact'}).then(function(token) {
-                                                            document.getElementById('form_captcha').value = token;
-                                                        });
-                                                    };
-                                                </script><script src="https://www.google.com/recaptcha/api.js?render=6Ldx4rsfAAAAAJlD06YOFifaIdlkvfvHpe3QKzvH&onload=recaptchaCallback_form_captcha" async defer></script>
+                                                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
+                                                <script> grecaptcha.ready(function() {
+                                                    grecaptcha.execute('6Ldx4rsfAAAAAJlD06YOFifaIdlkvfvHpe3QKzvH', {action: 'contact'})
+                                                        .then(function(token) {
+                                                        document.getElementById('g-recaptcha-response').value = token; }); }); </script>
+
+
+                                                <script src="https://www.google.com/recaptcha/api.js?render=6Ldx4rsfAAAAAJlD06YOFifaIdlkvfvHpe3QKzvH&onload=recaptchaCallback_form_captcha" async defer></script>
                                             </div>
                                         </div>
                                     </div>

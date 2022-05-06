@@ -13,6 +13,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Address;
+use Symfony\Component\Notifier\Exception\TransportException;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
@@ -122,8 +123,13 @@ class ResetPasswordController extends AbstractController
             $this->entityManager->flush();
 
             // The session is cleaned up after the password has been changed.
-            $this->cleanSessionAfterReset();
+            try {
+                $this->cleanSessionAfterReset();
 
+                $this->addFlash('success', '✅ Votre mot de passe a bien été changé!');
+            } catch (TransportException $e) {
+                $this->addFlash('error', '❌ Une erreur c\'est produite!');
+            }
             return $this->redirectToRoute('app_login');
         }
 

@@ -25,9 +25,14 @@ class ContactController extends AbstractController
         $form = $this->createForm(ContactType::class);
 
         $form->handleRequest($request);
+        $recaptcha_secret = 'RECAPTCHA3_SECRET';
+        $recaptcha_response = $request->request->get('g-recaptcha-response');
 
+        $captcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $recaptcha_secret .
+            '&response=' . $recaptcha_response);
+        $resp = json_decode($captcha);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid() && $resp == true) {
 
             $contactFormData = $form->getData();
             $message = (new Email())
