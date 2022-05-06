@@ -155,5 +155,8 @@
     <orderEntry type="library" name="twitter-bootstrap" level="application" />
     <orderEntry type="library" name="particles" level="application" />
     <orderEntry type="library" name="api" level="application" />
+    <orderEntry type="library" name="flickity" level="application" />
+    <orderEntry type="library" name="jquery-3.4.1" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>
