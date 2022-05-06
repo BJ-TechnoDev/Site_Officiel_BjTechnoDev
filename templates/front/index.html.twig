@@ -53,11 +53,11 @@
             Si vous avez un <strong>restaurant</strong> et que vous désirez un site <strong>click and collect</strong> <a href="{{ path('homepage') }}#contactus">contactez-nous</a>
             <br>
         </p>
-            <div style="width: 60%;margin: 0 auto;display: flex;justify-content: space-around;font-size: 30px;">
-                <p data-aos="flip-left" data-aos-duration="1500" class="text-center" style="display: flex;flex-direction: column"><i class="fa-3x fa-brands fa-wordpress"></i><span style="font-size: 25px;">Wordpress</span></p>
-                <p data-aos="flip-up" data-aos-duration="1500" class="text-center" style="display: flex;flex-direction: column"><i class="fa-3x fa-brands fa-shopify"></i><span style="font-size: 25px;">Prestashop</span></p>
-                <p data-aos="flip-right" data-aos-duration="1500" class="text-center" style="display: flex;flex-direction: column"><i class="fa-3x fa-brands fa-symfony"></i><span style="font-size: 25px;">Symfony</span></p>
-            </div>
+        <div style="width: 60%;margin: 0 auto;display: flex;justify-content: space-around;font-size: 30px;">
+            <p data-aos="flip-left" data-aos-duration="1500" class="text-center" style="display: flex;flex-direction: column"><i class="fa-3x fa-brands fa-wordpress"></i><span style="font-size: 25px;">Wordpress</span></p>
+            <p data-aos="flip-up" data-aos-duration="1500" class="text-center" style="display: flex;flex-direction: column"><i class="fa-3x fa-brands fa-shopify"></i><span style="font-size: 25px;">Prestashop</span></p>
+            <p data-aos="flip-right" data-aos-duration="1500" class="text-center" style="display: flex;flex-direction: column"><i class="fa-3x fa-brands fa-symfony"></i><span style="font-size: 25px;">Symfony</span></p>
+        </div>
         <p class="text-center about-txt" data-aos="fade-down" data-aos-duration="1500">
             <br>
             N'hésitez pas à faire appel à nos <strong>deux développeurs</strong> :
@@ -68,14 +68,14 @@
                 <a class="none-deco" href="https://bastiendev.com/" target="_blank">
                     <img alt="photo" class="img-ronde" src="{{ asset('build/img-about-bastien.jpg') }}">
 
-                <span class="txt-img-ronde">Bastien Oeuvrard</span></a>
+                    <span class="txt-img-ronde">Bastien Oeuvrard</span></a>
             </div>
 
             <div class="col-md-6 text-center resp-about" style="padding-right: 0;" data-aos="fade-up" data-aos-duration="1000">
                 <a class="none-deco" href="https://jeremydev.fr" target="_blank">
                     <img alt="" class="img-ronde" src="{{ asset('build/img-about-jeremy.jpg') }}">
 
-                <span class="txt-img-ronde">Jérémy ROSSI</span></a>
+                    <span class="txt-img-ronde">Jérémy ROSSI</span></a>
             </div>
         </div>
 
@@ -128,30 +128,30 @@
 
             <div class="js-flickity-slider">
                 {% for projet in projets %}
-                <div class="js-carousel-cell">
+                    <div class="js-carousel-cell">
 
-                    <div class="ag-shop-card_box-wrap">
+                        <div class="ag-shop-card_box-wrap">
 
-                        <div class="ag-shop-card_box">
+                            <div class="ag-shop-card_box">
 
-                            <div class="ag-shop-card_body">
+                                <div class="ag-shop-card_body">
 
-                                <div class=" ag-card-bg" style=""><img class="js-card-bg ag-card-bg" src="{{asset('uploads/img_bg/'~projet.imgBg)}}" alt=""></div>
-                                <a href="{{projet.link}}" target="_blank" class="ag-shop-card-body_link"><img src="{{asset('uploads/img_rond/'~projet.imgRond)}}" alt="Falu" class="ag-shop-card-body_img"></a>
-                            </div>
-                            <div class="ag-shop-card_footer">
-                                <a href="{{ projet.link }}" target="_blank" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
-                                <span class="ag-shop-card-footer_title">{{ projet.titre }}</span>
-                                <span class="ag-shop-card-footer_products">BJTechnoDev</span>
+                                    <div class=" ag-card-bg" style=""><img class="js-card-bg ag-card-bg" src="{{asset('uploads/img_bg/'~projet.imgBg)}}" alt=""></div>
+                                    <a href="{{projet.link}}" target="_blank" class="ag-shop-card-body_link"><img src="{{asset('uploads/img_rond/'~projet.imgRond)}}" alt="Falu" class="ag-shop-card-body_img"></a>
+                                </div>
+                                <div class="ag-shop-card_footer">
+                                    <a href="{{ projet.link }}" target="_blank" class="ag-shop-card-footer_link"><img src="https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/parallax-swipe/images/arrow.svg" class="ag-shop-card-footer_arrow"></a>
+                                    <span class="ag-shop-card-footer_title">{{ projet.titre }}</span>
+                                    <span class="ag-shop-card-footer_products">BJTechnoDev</span>
+
+                                </div>
 
                             </div>
 
                         </div>
 
+
                     </div>
-
-
-                </div>
                 {% endfor %}
             </div>
 
@@ -207,13 +207,6 @@
                                                 <input type="submit" value="Envoyez Votre Message" class="btn" style="background-color: #5289D8; color: #F9F190">
                                                 <div class="submitting"></div>
                                                 <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
-                                                <script> grecaptcha.ready(function() {
-                                                    grecaptcha.execute('6Ldx4rsfAAAAAJlD06YOFifaIdlkvfvHpe3QKzvH', {action: 'contact'})
-                                                        .then(function(token) {
-                                                        document.getElementById('g-recaptcha-response').value = token; }); }); </script>
-
-
-                                                <script src="https://www.google.com/recaptcha/api.js?render=6Ldx4rsfAAAAAJlD06YOFifaIdlkvfvHpe3QKzvH&onload=recaptchaCallback_form_captcha" async defer></script>
                                             </div>
                                         </div>
                                     </div>
@@ -271,3 +264,19 @@
 
     </section>
 {% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    <script src="https://www.google.com/recaptcha/api.js?render=6LezuLsfAAAAAMgjF_sK3tnufttu0nRAnmOgAjQg"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LezuLsfAAAAAMgjF_sK3tnufttu0nRAnmOgAjQg')
+                .then(function(token) {
+                    document.getElementById('g-recaptcha-response').value = token;
+                });
+        });
+    </script>
+
+
+{% endblock %}
+
