@@ -12,7 +12,8 @@ AOS.init();
 
 // start the Stimulus application
 import '../bootstrap';
-import 'jquery';
+// import 'jquery';
+
 import './particules';
 import './alert';
 
